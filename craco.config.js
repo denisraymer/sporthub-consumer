@@ -12,7 +12,7 @@ module.exports = {
                         '@blue-6': '#3072C4',
                         // '@primary-color': '#3072C4',
                         '@link-color': '#1890ff',
-                        '@component-background': '#F2F2F2',
+                        // '@component-background': '#F2F2F2',
                         '@success-color': '#52c41a',
                         '@warning-color': '#faad14',
                         '@error-color': '#f5222d',

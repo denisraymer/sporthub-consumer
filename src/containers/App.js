@@ -7,7 +7,7 @@ function App() {
     const {Header, Content, Footer} = Layout;
 
     return (
-        <Layout style={{minHeight: '100vh'}}>
+        <Layout>
             <Header style={{position: 'fixed', zIndex: 1, width: '100%', display: 'flex'}}>
                 <img src={Logo} alt='SportHUB' className='logo' style={{marginRight: '20px'}}/>
                 <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['2']}>
@@ -16,20 +16,18 @@ function App() {
                 </Menu>
             </Header>
             <Content className='site-layout' style={{padding: '0 50px', marginTop: 64}}>
-                <div className='container'>
-                    <Breadcrumb style={{margin: '16px 0'}}>
-                        <Breadcrumb.Item>Home</Breadcrumb.Item>
-                        <Breadcrumb.Item>List</Breadcrumb.Item>
-                        <Breadcrumb.Item>App</Breadcrumb.Item>
-                    </Breadcrumb>
-                    <div className='site-layout-background' style={{padding: 24, minHeight: 380}}>
-                        <h1>antd version: {version}</h1>
-                        <DatePicker/>
-                        <Button type='primary' style={{marginLeft: 8}}>
-                            Primary Button
-                        </Button>
-                        <Progress percent={50} status="active"/>
-                    </div>
+                <Breadcrumb style={{margin: '16px 0'}}>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>List</Breadcrumb.Item>
+                    <Breadcrumb.Item>App</Breadcrumb.Item>
+                </Breadcrumb>
+                <div className='site-layout-background' style={{padding: 24, minHeight: 380}}>
+                    <h1>antd version: {version}</h1>
+                    <DatePicker/>
+                    <Button type='primary' style={{marginLeft: 8}}>
+                        Primary Button
+                    </Button>
+                    <Progress percent={50} status="active"/>
                     <Timeline mode="alternate">
                         <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
                         <Timeline.Item color="green">Solve initial network problems 2015-09-01</Timeline.Item>
